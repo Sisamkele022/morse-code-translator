@@ -75,7 +75,7 @@ morse-code-translator/
 ├── main.py            # GUI and app launcher
 ├── translator.py      # The logic behind the translator
 ├── README.md          # You’re reading it right now
-└── requirements.txt   # (Optional if you add more packages)
+└── requirements.txt
 ```
 
 ---
