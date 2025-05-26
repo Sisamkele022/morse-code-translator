@@ -1,121 +1,94 @@
-# 🔐 Morse Code Translator
+📡 Star Wars Morse Code Translator
+A fun and interactive Morse Code Translator with a Star Wars aesthetic, featuring background music, sound effects, and a Tkinter-based GUI. Supports encoding (text to Morse) and decoding (Morse to text).
 
-Hey there! 👋  
-This is a fun little Morse Code Translator I built (yeah, like the one R2-D2 would use to prank C-3PO).  
-It converts plain text ➡️ Morse code and back again.
-
----
-
-## ✨ Features
-
-- 🔤 Translate text to Morse code
-- 📻 Decode Morse code back to normal text
-- 🖥️ Clean and simple GUI (no terminal stress)
-- 😵 Handles spaces, punctuation, numbers — the whole squad
-- 🚫 No crashes on empty input
-
----
-
-## ⚙️ How to Use It
-
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/Sisamkele022/morse-code-translator.git
-cd morse-code-translator
-````
-
-### 2. Run the app
-
-Make sure you have Python installed. Then just:
-
-```bash
-python main.py
-```
-
-Yup. That’s it.
-
-> Note: GUI is built with `tkinter` (which comes with Python by default).
-
----
-
-## 🧠 What It Can Do
-
-### 🧾 Text → Morse
-
-```python
-lettersToMorseCode("Darth Vader is Luke’s father")
-# Output:
-# "-.. .- .-. - .... / ...- .- -.. . .-. / .. ... / .-.. ..- -.- . .----. ... / ..-. .- - .... . .-."
-```
-
-### 📡 Morse → Text
-
-```python
-morseCodeToLetters(".... . .-.. .-.. --- / - .... . .-. .")
-# Output:
-# "HELLO THERE"
-```
-
----
-
-## 🧪 Example Use Cases
-
-* 🔒 Send secret messages to your bestie
-* 👻 Confuse your friends in the group chat
-* 💥 Hide spoilers from nosy people
-* 🤖 Teach a robot how to flirt
-
----
-
-## 🗂️ Project Structure
-
-```bash
+📁 Project Structure
+bash
+Copy
+Edit
 morse-code-translator/
-├── main.py            # GUI and app launcher
-├── translator.py      # The logic behind the translator
-├── README.md          # You’re reading it right now
-└── requirements.txt   # (Optional if you add more packages)
-```
+│
+├── gui/
+│   ├── __init__.py
+│   └── main.py                # GUI with Star Wars theme
+│
+├── morse/
+│   ├── __init__.py
+│   └── logic.py               # Morse code logic (encode/decode)
+│
+├── assets/
+│   ├── background.png         # Sci-fi background
+│   ├── starjedi.ttf           # Star Wars font
+│   ├── dot.wav                # Sound for dot
+│   ├── dash.wav               # Sound for dash
+│   └── background_music.mp3   # Theme music
+│
+├── requirements.txt
+├── main.py                    # Entry point
+└── README.md                  # Project documentation
+🚀 Features
+Encode text into Morse code with sound effects.
 
----
+Decode Morse code back into text.
 
-## 🚧 Future Upgrades?
+Star Jedi font and themed background.
 
-If I get extra time or feel fancy:
+Background music using pygame.
 
-* [ ] Add beep sounds for each Morse character
-* [ ] Build a command-line version
-* [ ] Add dark mode 🌚
-* [ ] Let users copy Morse code with one click
+Copy Morse code output to clipboard.
 
----
+🔧 Installation
+Clone the repository
 
-## 🧑🏽‍💻 Built by
+bash
+Copy
+Edit
+git clone https://github.com/your-username/morse-code-translator.git
+cd morse-code-translator
+Create a virtual environment (optional)
 
-**Sisamkele Vava**
-Just a dev building cool stuff and dodging the Empire.
-[GitHub Profile](https://github.com/Sisamkele022)
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate   # macOS/Linux
+venv\Scripts\activate      # Windows
+Install dependencies
 
----
+bash
+Copy
+Edit
+pip install -r requirements.txt
+▶️ Usage
+Run the app using:
 
-## 🛸 Peace Out
+bash
+Copy
+Edit
+python main.py
+You’ll see a Star Wars-themed interface where you can:
 
-Hope you enjoy it.
-Wanna collab or give ideas? Drop me a DM or PR.
-This is the way. ✌️
+Enter text and click Encode to get Morse code with sound.
 
-````
+Enter Morse code and click Decode to convert it to text.
 
----
+Use the Copy button to copy Morse output.
 
-### ✅ Next Steps:
+🎵 Notes
+Ensure dot.wav, dash.wav, and background_music.mp3 exist under the assets/ directory.
 
-1. Save this into `README.md`
-2. Then commit and push it:
+To add more characters to Morse, update MORSE_CODE_DICT in morse/logic.py.
 
-```bash
-git add README.md
-git commit -m "Add fun README with my own style"
-git push origin readme-file
-````
+💻 Dependencies
+Add these to your requirements.txt:
+
+nginx
+Copy
+Edit
+pygame
+pyperclip
+🛠️ Future Improvements
+Add dark/light theme toggle.
+
+Allow audio customization.
+
+Add international Morse characters.
