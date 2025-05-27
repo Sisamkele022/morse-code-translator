@@ -3,7 +3,7 @@
 
 Welcome to the **Morse Code Translator**, a modern and interactive React-based web app that lets you convert between English text and Morse code — complete with audio feedback and a fun sci-fi aesthetic!
 
-![App Screenshot](public/background.png)
+![App Screenshot](public/DEMO.png)
 
 ---
 
