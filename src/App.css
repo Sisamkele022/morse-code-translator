@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'StarJedi';
+  src: url('/sounds/starjedi.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #000000 0%, #1a1a1a 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.app-container {
+  background: #000;
+  border: 3px solid #fdd835;
+  border-radius: 16px;
+  padding: 2rem 3rem;
+  box-shadow: 0 0 40px #fdd835;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px #fdd835;
+  }
+  50% {
+    box-shadow: 0 0 30px #fdd835;
+  }
+}
+
+.title {
+  font-family: 'StarJedi', sans-serif;
+  font-size: 2.5rem;
+  color: #fdd835;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 15px #fdd835;
+}
+
+.input-box {
+  width: 100%;
+  height: 120px;
+  padding: 1rem;
+  background: #111;
+  border: 2px solid #fdd835;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+  resize: none;
+  margin-bottom: 1.5rem;
+  box-shadow: inset 0 0 5px #fdd835;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.glow-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #fdd835;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #fdd835;
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-button:hover {
+  background: #fff176;
+  box-shadow: 0 0 20px #fff176, 0 0 40px #fff176;
+  transform: scale(1.05);
+}
+
+.output-section {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.output-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #fdd835;
+}
+
+.output-box {
+  width: 100%;
+  min-height: 60px;
+  padding: 1rem;
+  background-color: #111;
+  color: #fff;
+  border: 2px solid #fdd835;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 216, 0, 0.5);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Courier New', Courier, monospace;
+}
